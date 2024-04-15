@@ -1,4 +1,4 @@
-export default function fetchLocationName(){
+export default function fetchLocationTemp(){
 
     const userInput = document.querySelector("#userInput").value;
     console.log(userInput);
@@ -8,8 +8,8 @@ export default function fetchLocationName(){
         return response.json();
     })
     .then(function(response) {
-        const userLocationTemp = document.querySelector("#userLocationTemp");
-        userLocationTemp.innerHTML = `${response.location.name},${response.location.country}`
+        const userLocationPlace = document.querySelector("#userLocationPlace");
+        userLocationPlace.innerHTML = `${response.location.name},${response.location.country}`
         console.log(response)
       });
     }

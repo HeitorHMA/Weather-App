@@ -1,3 +1,6 @@
-import fetchWeather from "./fetchWeather";
+import fetchLocationName from "./fetchLocationName";
 
-fetchWeather()
+const userSubmit = document.querySelector("#userSubmitButton");
+userSubmit.addEventListener("click",function(){
+   fetchLocationName();
+});
