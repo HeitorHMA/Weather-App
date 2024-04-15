@@ -1,0 +1,1 @@
+(()=>{"use strict";fetch("https://api.weatherapi.com/v1/current.json?key=58f97e0302ee40a28e5192754241504&q=London",{mode:"cors"}).then((function(e){return e.json()})).then((function(e){const n=e.location.name;console.log(n)}))})();
