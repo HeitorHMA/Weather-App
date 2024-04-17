@@ -34,5 +34,14 @@ export default function fetchLocationTemp(){
         userCloudText.innerHTML = `${response.current.condition.text}`
       });
 
+      fetch (`https://api.weatherapi.com/v1/current.json?key=58f97e0302ee40a28e5192754241504&q=${userInput}`,{mode: 'cors'})
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(response) {
+        const userFeelsLike = document.querySelector("#userFeelsLike");
+        userFeelsLike.innerHTML = `Feels like ${response.current.feelslike_c}°C`
+        console.log(response.current.feelslike_c)
+      });
 
     }
