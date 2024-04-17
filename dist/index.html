@@ -8,23 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>The Weather App</h1>
+        <h1 class="header-title">The Weather App</h1>
         <div id="userForm">
-        <input type="text" id="userInput" placeholder="Search location">
-        <button id="userSubmitButton">Search</button>
-        </div>
-        <div id="temperatureButtons">
-            <button>°C</button>
-            <button>°F</button>
+        <input type="text" id="userInput" placeholder="Search location..." class="header-input">
+        <img id="userSubmitButton" class="header-button" src="/src/imgs/icons8-magnifying-glass-50 (1).png"></img>
         </div>
     </header>
     <div id="weatherDiv">
+        <div class="info-grid">
         <div id="userLocationName">
             <div id="userLocationPlace"></div>
             <div id="userLocationTime"></div>
         </div>
         <div id="userLocationTemp"></div>
         <div id="userLocationInfo"></div>
+        </div>
     </div>
     <footer>
         <h2>Heitor Henrique 2024</h2>
